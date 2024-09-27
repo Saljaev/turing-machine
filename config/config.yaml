@@ -1,0 +1,4 @@
+zero_cell: "0"
+full_cell: "1"
+default_tape_length: 10
+default_code_length: 6
