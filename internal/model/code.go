@@ -5,11 +5,15 @@ import (
 	"strings"
 )
 
-type State struct {
-	Symbol string
-	C      Code
-}
+/*
+Code is order five with indication of the direction
 
+1. NextSymbol or CurrentSymbol can be represented by any rune
+
+2. Direction can be R, L, C
+
+Example: q1 1 -> q2 0 R
+*/
 type Code struct {
 	CurrentState  int
 	CurrentSymbol string
